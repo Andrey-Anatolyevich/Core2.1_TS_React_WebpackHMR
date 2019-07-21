@@ -1,0 +1,19 @@
+﻿{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es2018",
+    "jsx": "react",
+    "moduleResolution": "node"
+  },
+  //"include": [
+  //  "wwwroot/js/*",
+  //  "wwwroot/js/**/*"
+  //],
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ]
+}

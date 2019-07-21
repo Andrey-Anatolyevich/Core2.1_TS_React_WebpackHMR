@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "@types/react": "^16.7.6",
+    "@types/react-dom": "^16.0.9",
+    "aspnet-webpack": "^3.0.0",
+    "babel-loader": "^8.0.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "typescript": "^3.1.6",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
