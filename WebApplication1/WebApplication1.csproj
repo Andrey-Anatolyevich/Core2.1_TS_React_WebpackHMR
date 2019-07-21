@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
@@ -17,15 +17,33 @@
     <Content Remove="wwwroot\js\app.tsx" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="_ts\List.tsx" />
+    <Content Include="_ts\ListItem.tsx" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="MSBuild.Npm" Version="0.5.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 
   <ItemGroup>
-    <TypeScriptCompile Include="wwwroot\js\app.tsx" />
+    <TypeScriptCompile Include="_ts\app.tsx" />
   </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="wwwroot\js\" />
+  </ItemGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <NpmCommand>run build</NpmCommand>
+  </PropertyGroup>
 
 </Project>

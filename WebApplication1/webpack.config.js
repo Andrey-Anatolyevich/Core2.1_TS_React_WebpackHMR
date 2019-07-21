@@ -1,11 +1,18 @@
 const path = require('path');
 module.exports = {
     mode: 'development',
-    entry: { main: './wwwroot/js/app.tsx' },
+    entry: {
+        main: './_ts/app.tsx'
+    },
+    devtool: 'inline-source-map',
     output: {
-        path: path.resolve(__dirname, './wwwroot/js/dist'),
+        path: path.resolve(__dirname, './wwwroot/js'),
         filename: 'bundle.js',
         publicPath: 'dist/'
+    },
+    devServer: {
+        contentBase: './wwwroot/js',
+        hot: true
     },
     resolve: {
         extensions: ['*', '.js', '.jsx', '.tsx']
