@@ -1,4 +1,8 @@
-﻿import * as React from "react";
+﻿if (module['hot']) {
+    module['hot'].accept();
+}
+
+import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { List } from "./List";
 import { ListItemProps } from "./ListItem";
@@ -12,9 +16,7 @@ const items: ListItemProps[] = [
     { name: 'Karl Jobst', rank: 7, points: 5510},
     { name: 'Dan Parker', rank: 8, points: 5449},
     { name: 'Ryan White', rank: 9, points: 5343},
-    { name: 'Jim Barrett', rank: 10, points: 5312},
-    { name: 'Jim Barrett 2', rank: 11, points: 5312 },
-    { name: 'Jim Barrett 3', rank: 12, points: 5312 }
+    { name: 'Jim Barrett', rank: 10, points: 5312 }
 ];
 ReactDOM.render(
     <List items={ items } />,
