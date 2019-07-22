@@ -4,7 +4,7 @@ export interface ListProps { items: Array<ListItemProps> }
 export class List extends React.Component<ListProps> {
     render() {
         const Items = this.props.items.map((item) => {
-            return <ListItem name={item.name} rank={item.rank} points={item.points}></ListItem>
+            return <ListItem name={item.name} rank={item.rank} points={item.points} key={item.key}></ListItem>
         })
         return (
             <ol>

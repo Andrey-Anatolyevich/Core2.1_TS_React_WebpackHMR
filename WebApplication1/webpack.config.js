@@ -4,12 +4,12 @@ var webpack = require("webpack");
 module.exports = {
     mode: 'development',
     entry: {
-        'main': './_ts/app.tsx'
+        main: './_ts/app.tsx'
     },
-    devtool: 'inline-source-map',
+    devtool: 'source-map',
     output: {
         filename: 'main.js',
-        path: path.resolve(__dirname, './wwwroot/js'),
+        path: path.resolve(__dirname, 'wwwroot', 'js'),
         publicPath: 'js/'
     },
     devServer: {
@@ -35,10 +35,7 @@ module.exports = {
         ]
     },
     plugins: [
-        // OccurrenceOrderPlugin is needed for webpack 1.x only
-        new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
-        // Use NoErrorsPlugin for webpack 1.x
         new webpack.NoEmitOnErrorsPlugin()
     ]
 };
