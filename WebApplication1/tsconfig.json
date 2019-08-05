@@ -11,10 +11,6 @@
     "jsx": "react",
     "moduleResolution": "node"
   },
-  //"include": [
-  //  "wwwroot/js/*",
-  //  "wwwroot/js/**/*"
-  //],
   "exclude": [
     "node_modules",
     "wwwroot"
