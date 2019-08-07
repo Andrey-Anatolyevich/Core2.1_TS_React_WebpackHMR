@@ -4,7 +4,7 @@ var webpack = require("webpack");
 module.exports = {
     mode: 'development',
     entry: {
-        app: './_ts/app.tsx'
+        'app-engine': './_ts/app-engine.tsx'
     },
     devtool: 'source-map',
     output: {

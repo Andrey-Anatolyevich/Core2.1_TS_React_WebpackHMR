@@ -262,8 +262,10 @@ __pycache__/
 
 
 
-*/_ts/*.js
-*/_ts/*.js.map
+*/_ts/**/*.js
+*/_ts/**/*.js.map
 
+*/wwwroot/js
+*/wwwroot/css/*.css
 
 */.awcache

@@ -1,0 +1,37 @@
+﻿body {
+    background-color: aliceblue;
+}
+
+.app-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    background-color: rgb(239, 255, 220);
+}
+
+nav {
+    flex-grow: 0;
+    flex-shrink:1;
+    flex-basis: 13em;
+    background-color: rgb(220, 255, 236);
+}
+
+main {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 50%;
+    background-color: rgb(220, 222, 255);
+}
+
+footer {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    background-color: rgb(240, 255, 220);
+}
